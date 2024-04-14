@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This documentation provides information about a Flask-based web service that exposes an API for making predictions on medical images using deep learning. The service uses the MONAI framework for inference, incorporating OpenCV for image processing, and leveraging PyTorch for the execution of the model. The API supports the classification of images into categories such as 'Benign' and 'Malignant.'
+This documentation provides information about a Flask-based web service that exposes an API for making predictions on medical skin images using deep learning. The service uses the MONAI framework for inference, incorporating OpenCV for image processing, and leveraging PyTorch for the execution of the model. The API supports the classification of skin images into categories such as 'Benign' and 'Malignant.'
 
 ## Setup and Installation
 
