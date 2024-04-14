@@ -97,24 +97,6 @@ def d2Kmeans(img, k):
 # This pre-processing step could be useful in highlighting certain features within medical images
 # and omitting unnecessary parts of the image before sending it for model prediction.
 
-@app.route('/add', methods=['POST'])
-def add_numbers():
-    """
-    An API endpoint for adding two numbers sent as JSON in the request body.
-    
-    Returns:
-        A JSON object containing the sum of the numbers, or an error message
-        if the request does not contain the necessary information.
-    """
-    try:
-        data = request.get_json()
-        num1 = data['num1']
-        num2 = data['num2']
-        result = num1 + num2
-        return jsonify({'sum': result})
-    except KeyError:
-        return jsonify({'error': 'Please provide both num1 and num2 as JSON in the request body.'}), 400
-
 
 @app.route('/predict', methods=['POST'])
 def predict():
